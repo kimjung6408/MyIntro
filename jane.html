@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane - Psychological Counselor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #fff9e6 0%, #fff3b8 50%, #ffeb99 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .pollen {
+            position: absolute;
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.7;
+            filter: blur(1px);
+        }
+
+        .pollen:nth-child(1) {
+            width: 8px;
+            height: 8px;
+            background: #ff6b9d;
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .pollen:nth-child(2) {
+            width: 12px;
+            height: 12px;
+            background: #4ecdc4;
+            top: 20%;
+            right: 15%;
+            animation-delay: 1s;
+        }
+
+        .pollen:nth-child(3) {
+            width: 6px;
+            height: 6px;
+            background: #45b7d1;
+            top: 35%;
+            left: 20%;
+            animation-delay: 2s;
+        }
+
+        .pollen:nth-child(4) {
+            width: 10px;
+            height: 10px;
+            background: #f9ca24;
+            top: 50%;
+            right: 10%;
+            animation-delay: 3s;
+        }
+
+        .pollen:nth-child(5) {
+            width: 14px;
+            height: 14px;
+            background: #6c5ce7;
+            top: 65%;
+            left: 8%;
+            animation-delay: 4s;
+        }
+
+        .pollen:nth-child(6) {
+            width: 9px;
+            height: 9px;
+            background: #fd79a8;
+            top: 80%;
+            right: 25%;
+            animation-delay: 5s;
+        }
+
+        .pollen:nth-child(7) {
+            width: 7px;
+            height: 7px;
+            background: #00b894;
+            top: 25%;
+            left: 70%;
+            animation-delay: 1.5s;
+        }
+
+        .pollen:nth-child(8) {
+            width: 11px;
+            height: 11px;
+            background: #e17055;
+            top: 45%;
+            left: 85%;
+            animation-delay: 2.5s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) translateX(0px);
+            }
+            25% {
+                transform: translateY(-20px) translateX(10px);
+            }
+            50% {
+                transform: translateY(-10px) translateX(-15px);
+            }
+            75% {
+                transform: translateY(-25px) translateX(5px);
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .name {
+            font-size: 3rem;
+            color: #8b4513;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 1.5rem;
+            color: #d2691e;
+            font-style: italic;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            line-height: 1.8;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #8b4513;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #f9ca24;
+            padding-bottom: 0.5rem;
+        }
+
+        .section p {
+            color: #5d4e37;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .mbti-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #6c5ce7, #45b7d1);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+            margin: 0.5rem 0;
+            box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, transparent 0%, rgba(249, 202, 36, 0.3) 50%, transparent 100%);
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #8b4513;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="pollen"></div>
+    <div class="pollen"></div>
+    <div class="pollen"></div>
+    <div class="pollen"></div>
+    <div class="pollen"></div>
+    <div class="pollen"></div>
+    <div class="pollen"></div>
+    <div class="pollen"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1 class="name">Jane</h1>
+            <p class="title">Enthusiastic Psychological Counselor</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>About Me</h2>
+                <p>Hello! I'm Jane, an <span class="highlight">enthusiastic psychological counselor</span> with a deep passion for helping people navigate their mental health journey. I believe that everyone deserves to feel understood, supported, and empowered to overcome life's challenges.</p>
+            </div>
+
+            <div class="section">
+                <h2>Education & Expertise</h2>
+                <p>I hold a major in <span class="highlight">Psychology</span>, where I developed a comprehensive understanding of human behavior, cognitive processes, and therapeutic techniques. My academic foundation provides me with the knowledge and skills necessary to offer effective, evidence-based counseling services.</p>
+            </div>
+
+            <div class="section">
+                <h2>Personality & Approach</h2>
+                <p>My MBTI personality type is <span class="mbti-badge">INTP</span>, which means I bring a unique perspective to counseling. While INTPs are known for their analytical nature, I channel this trait into being exceptionally <span class="highlight">logical and systematic in helping my clients</span>.</p>
+                <p>I approach each session with curiosity and precision, carefully analyzing patterns and developing tailored strategies that make sense for each individual's specific situation and goals.</p>
+            </div>
+
+            <div class="section">
+                <h2>My Philosophy</h2>
+                <p>I believe that healing happens when logic meets compassion. My analytical mind helps me identify the root causes of challenges, while my genuine care for clients ensures that every session is a safe space for growth and discovery.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>"Understanding the mind is the first step to healing the heart."</p>
+        </div>
+    </div>
+</body>
+</html>
