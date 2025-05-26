@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woojung Kim - Entrepreneur</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #2d1b69, #4a148c, #1a0d2e);
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: #f8f8f8;
+            position: relative;
+        }
+
+        .grass-ground {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 150px;
+            background: linear-gradient(to top, #1a0d2e, #2d1b69);
+            z-index: 1;
+        }
+
+        .grass-ground::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background: repeating-linear-gradient(
+                90deg,
+                #2d5016 0px,
+                #2d5016 3px,
+                #1a3009 3px,
+                #1a3009 6px
+            );
+            opacity: 0.8;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .sakura-header {
+            background: rgba(139, 69, 19, 0.1);
+            border: 2px solid #ffb3ba;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(255, 179, 186, 0.2);
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ffb3ba;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .subtitle {
+            font-size: 1.4em;
+            color: #f0c4d8;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .intro-section {
+            background: rgba(255, 179, 186, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 179, 186, 0.3);
+        }
+
+        .intro-section h2 {
+            color: #ffb3ba;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .intro-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #f8f8f8;
+            margin-bottom: 15px;
+        }
+
+        .mbti-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 10px;
+            box-shadow: 0 4px 15px rgba(255, 107, 157, 0.3);
+        }
+
+        .interests {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .interest-tag {
+            background: rgba(255, 179, 186, 0.2);
+            border: 1px solid #ffb3ba;
+            padding: 8px 16px;
+            border-radius: 20px;
+            color: #f0c4d8;
+            font-size: 1em;
+        }
+
+        .sakura-petal {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: radial-gradient(ellipse, #ffb3d1, #ff8fa3);
+            border-radius: 50% 10% 50% 10%;
+            opacity: 0.8;
+            pointer-events: none;
+            z-index: 0;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .sakura-petal:nth-child(odd) {
+            animation-duration: 8s;
+            animation-delay: 0s;
+        }
+
+        .sakura-petal:nth-child(even) {
+            animation-duration: 10s;
+            animation-delay: 2s;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .sakura-header {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grass-ground"></div>
+    
+    <div class="container">
+        <div class="sakura-header">
+            <h1>Woojung Kim</h1>
+            <p class="subtitle">Entrepreneur & Technology Enthusiast</p>
+        </div>
+
+        <div class="intro-section">
+            <h2>About Me</h2>
+            <p>Welcome! I'm an entrepreneur passionate about building innovative solutions in the e-commerce and SaaS business landscape. I thrive on transforming ideas into scalable digital products that make a meaningful impact.</p>
+            
+            <div class="mbti-badge">INTP - The Thinker</div>
+            
+            <p>As an INTP, I love diving deep into complex problems, analyzing systems, and finding elegant solutions. My curiosity drives me to constantly explore new technologies and understand how they can reshape businesses and society.</p>
+        </div>
+
+        <div class="intro-section">
+            <h2>What I'm Passionate About</h2>
+            <p>I'm fascinated by the intersection of technology and business, particularly how AI and emerging technologies are revolutionizing the way we work, shop, and connect.</p>
+            
+            <div class="interests">
+                <span class="interest-tag">🤖 Artificial Intelligence</span>
+                <span class="interest-tag">💼 E-commerce Innovation</span>
+                <span class="interest-tag">⚡ SaaS Solutions</span>
+                <span class="interest-tag">🚀 Emerging Technologies</span>
+                <span class="interest-tag">📊 Business Strategy</span>
+                <span class="interest-tag">🔬 Tech Research</span>
+            </div>
+        </div>
+
+        <div class="intro-section">
+            <h2>Let's Connect</h2>
+            <p>I'm always excited to discuss the latest in AI, technology trends, entrepreneurship, or innovative business models. Whether you're a fellow entrepreneur, tech enthusiast, or someone curious about the future of digital business, I'd love to connect and share ideas!</p>
+        </div>
+    </div>
+
+    <script>
+        function createSakuraPetal() {
+            const petal = document.createElement('div');
+            petal.className = 'sakura-petal';
+            petal.style.left = Math.random() * 100 + 'vw';
+            petal.style.animationDuration = (Math.random() * 3 + 5) + 's';
+            petal.style.animationDelay = Math.random() * 2 + 's';
+            document.body.appendChild(petal);
+
+            setTimeout(() => {
+                petal.remove();
+            }, 12000);
+        }
+
+        setInterval(createSakuraPetal, 300);
+
+        for (let i = 0; i < 10; i++) {
+            setTimeout(createSakuraPetal, i * 300);
+        }
+    </script>
+</body>
+</html>
